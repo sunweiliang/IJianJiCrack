@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		732170FB204F8E2D003EE7B0 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 732170FA204F8E2D003EE7B0 /* MethodTraceConfig.plist */; };
+		732170FE204F8E2D003EE7B0 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 732170FD204F8E2D003EE7B0 /* put ipa or app here */; };
+		73217106204F8E2D003EE7B0 /* libDPHookDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73217105204F8E2D003EE7B0 /* libDPHookDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7321710B204F8E2D003EE7B0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7321710A204F8E2D003EE7B0 /* JavaScriptCore.framework */; };
+		7321710D204F8E2D003EE7B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7321710C204F8E2D003EE7B0 /* Foundation.framework */; };
+		7321710F204F8E2D003EE7B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7321710E204F8E2D003EE7B0 /* UIKit.framework */; };
+		73217113204F8E2D003EE7B0 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 73217112204F8E2D003EE7B0 /* ANYMethodLog.h */; };
+		73217115204F8E2D003EE7B0 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 73217114204F8E2D003EE7B0 /* ANYMethodLog.m */; };
+		73217117204F8E2D003EE7B0 /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 73217116204F8E2D003EE7B0 /* MethodTrace.h */; };
+		73217119204F8E2D003EE7B0 /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 73217118204F8E2D003EE7B0 /* MethodTrace.m */; };
+		7321711E204F8E2D003EE7B0 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 7321711D204F8E2D003EE7B0 /* AntiAntiDebug.m */; };
+		73217121204F8E2D003EE7B0 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 73217120204F8E2D003EE7B0 /* fishhook.c */; };
+		73217123204F8E2D003EE7B0 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 73217122204F8E2D003EE7B0 /* fishhook.h */; };
+		73217126204F8E2D003EE7B0 /* DPHookDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73217125204F8E2D003EE7B0 /* DPHookDylib.mm */; };
+		73217128204F8E2D003EE7B0 /* DPHookDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 73217127204F8E2D003EE7B0 /* DPHookDylib.h */; };
+		7321712A204F8E2D003EE7B0 /* DPHookDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 73217129204F8E2D003EE7B0 /* DPHookDylib.m */; };
+		73217135204F98F9003EE7B0 /* NSString+SWL.h in Headers */ = {isa = PBXBuildFile; fileRef = 73217133204F98F9003EE7B0 /* NSString+SWL.h */; };
+		73217136204F98F9003EE7B0 /* HookHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 73217134204F98F9003EE7B0 /* HookHeader.h */; };
+		73217139204F992C003EE7B0 /* SWLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 73217137204F992B003EE7B0 /* SWLTools.m */; };
+		7321713A204F992C003EE7B0 /* SWLTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 73217138204F992C003EE7B0 /* SWLTools.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73217107204F8E2D003EE7B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 732170EC204F8E2D003EE7B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73217104204F8E2D003EE7B0;
+			remoteInfo = DPHookDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		732170F4204F8E2D003EE7B0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				73217106204F8E2D003EE7B0 /* libDPHookDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		732170F7204F8E2D003EE7B0 /* DPHook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPHook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		732170FA204F8E2D003EE7B0 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		732170FD204F8E2D003EE7B0 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		732170FF204F8E2D003EE7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73217105204F8E2D003EE7B0 /* libDPHookDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDPHookDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7321710A204F8E2D003EE7B0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		7321710C204F8E2D003EE7B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7321710E204F8E2D003EE7B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		73217112204F8E2D003EE7B0 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		73217114204F8E2D003EE7B0 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		73217116204F8E2D003EE7B0 /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		73217118204F8E2D003EE7B0 /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		7321711B204F8E2D003EE7B0 /* DPHookDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DPHookDylib-Prefix.pch"; sourceTree = "<group>"; };
+		7321711D204F8E2D003EE7B0 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		73217120204F8E2D003EE7B0 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		73217122204F8E2D003EE7B0 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		73217124204F8E2D003EE7B0 /* DPHookDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = DPHookDylib.xm; sourceTree = "<group>"; };
+		73217125204F8E2D003EE7B0 /* DPHookDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DPHookDylib.mm; sourceTree = "<group>"; };
+		73217127204F8E2D003EE7B0 /* DPHookDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHookDylib.h; sourceTree = "<group>"; };
+		73217129204F8E2D003EE7B0 /* DPHookDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHookDylib.m; sourceTree = "<group>"; };
+		73217133204F98F9003EE7B0 /* NSString+SWL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SWL.h"; sourceTree = "<group>"; };
+		73217134204F98F9003EE7B0 /* HookHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookHeader.h; sourceTree = "<group>"; };
+		73217137204F992B003EE7B0 /* SWLTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLTools.m; sourceTree = "<group>"; };
+		73217138204F992C003EE7B0 /* SWLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLTools.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		732170F1204F8E2D003EE7B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73217102204F8E2D003EE7B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7321710B204F8E2D003EE7B0 /* JavaScriptCore.framework in Frameworks */,
+				7321710F204F8E2D003EE7B0 /* UIKit.framework in Frameworks */,
+				7321710D204F8E2D003EE7B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		732170EB204F8E2D003EE7B0 = {
+			isa = PBXGroup;
+			children = (
+				732170F9204F8E2D003EE7B0 /* DPHook */,
+				73217110204F8E2D003EE7B0 /* DPHookDylib */,
+				73217109204F8E2D003EE7B0 /* Frameworks */,
+				732170F8204F8E2D003EE7B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		732170F8204F8E2D003EE7B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				732170F7204F8E2D003EE7B0 /* DPHook.app */,
+				73217105204F8E2D003EE7B0 /* libDPHookDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		732170F9204F8E2D003EE7B0 /* DPHook */ = {
+			isa = PBXGroup;
+			children = (
+				732170FA204F8E2D003EE7B0 /* MethodTraceConfig.plist */,
+				732170FF204F8E2D003EE7B0 /* Info.plist */,
+				732170FC204F8E2D003EE7B0 /* TargetApp */,
+			);
+			path = DPHook;
+			sourceTree = "<group>";
+		};
+		732170FC204F8E2D003EE7B0 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				732170FD204F8E2D003EE7B0 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		73217109204F8E2D003EE7B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7321710A204F8E2D003EE7B0 /* JavaScriptCore.framework */,
+				7321710C204F8E2D003EE7B0 /* Foundation.framework */,
+				7321710E204F8E2D003EE7B0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73217110204F8E2D003EE7B0 /* DPHookDylib */ = {
+			isa = PBXGroup;
+			children = (
+				73217138204F992C003EE7B0 /* SWLTools.h */,
+				73217137204F992B003EE7B0 /* SWLTools.m */,
+				73217134204F98F9003EE7B0 /* HookHeader.h */,
+				73217133204F98F9003EE7B0 /* NSString+SWL.h */,
+				73217124204F8E2D003EE7B0 /* DPHookDylib.xm */,
+				73217125204F8E2D003EE7B0 /* DPHookDylib.mm */,
+				73217127204F8E2D003EE7B0 /* DPHookDylib.h */,
+				73217129204F8E2D003EE7B0 /* DPHookDylib.m */,
+				73217111204F8E2D003EE7B0 /* MethodTrace */,
+				7321711C204F8E2D003EE7B0 /* AntiAntiDebug */,
+				7321711F204F8E2D003EE7B0 /* fishhook */,
+				7321711A204F8E2D003EE7B0 /* Supporting Files */,
+			);
+			path = DPHookDylib;
+			sourceTree = "<group>";
+		};
+		73217111204F8E2D003EE7B0 /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				73217112204F8E2D003EE7B0 /* ANYMethodLog.h */,
+				73217114204F8E2D003EE7B0 /* ANYMethodLog.m */,
+				73217116204F8E2D003EE7B0 /* MethodTrace.h */,
+				73217118204F8E2D003EE7B0 /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		7321711A204F8E2D003EE7B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7321711B204F8E2D003EE7B0 /* DPHookDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7321711C204F8E2D003EE7B0 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				7321711D204F8E2D003EE7B0 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		7321711F204F8E2D003EE7B0 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				73217120204F8E2D003EE7B0 /* fishhook.c */,
+				73217122204F8E2D003EE7B0 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73217103204F8E2D003EE7B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73217136204F98F9003EE7B0 /* HookHeader.h in Headers */,
+				73217128204F8E2D003EE7B0 /* DPHookDylib.h in Headers */,
+				73217113204F8E2D003EE7B0 /* ANYMethodLog.h in Headers */,
+				73217135204F98F9003EE7B0 /* NSString+SWL.h in Headers */,
+				73217117204F8E2D003EE7B0 /* MethodTrace.h in Headers */,
+				73217123204F8E2D003EE7B0 /* fishhook.h in Headers */,
+				7321713A204F992C003EE7B0 /* SWLTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		732170F6204F8E2D003EE7B0 /* DPHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73217130204F8E2D003EE7B0 /* Build configuration list for PBXNativeTarget "DPHook" */;
+			buildPhases = (
+				732170F0204F8E2D003EE7B0 /* Sources */,
+				732170F1204F8E2D003EE7B0 /* Frameworks */,
+				732170F2204F8E2D003EE7B0 /* ShellScript */,
+				732170F3204F8E2D003EE7B0 /* Resources */,
+				732170F4204F8E2D003EE7B0 /* CopyFiles */,
+				732170F5204F8E2D003EE7B0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73217108204F8E2D003EE7B0 /* PBXTargetDependency */,
+			);
+			name = DPHook;
+			productName = DPHook;
+			productReference = 732170F7204F8E2D003EE7B0 /* DPHook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73217104204F8E2D003EE7B0 /* DPHookDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7321712D204F8E2D003EE7B0 /* Build configuration list for PBXNativeTarget "DPHookDylib" */;
+			buildPhases = (
+				73217100204F8E2D003EE7B0 /* ShellScript */,
+				73217101204F8E2D003EE7B0 /* Sources */,
+				73217102204F8E2D003EE7B0 /* Frameworks */,
+				73217103204F8E2D003EE7B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DPHookDylib;
+			productName = DPHookDylib;
+			productReference = 73217105204F8E2D003EE7B0 /* libDPHookDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		732170EC204F8E2D003EE7B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = weiliang.sun;
+				TargetAttributes = {
+					732170F6204F8E2D003EE7B0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					73217104204F8E2D003EE7B0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 732170EF204F8E2D003EE7B0 /* Build configuration list for PBXProject "DPHook" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 732170EB204F8E2D003EE7B0;
+			productRefGroup = 732170F8204F8E2D003EE7B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				732170F6204F8E2D003EE7B0 /* DPHook */,
+				73217104204F8E2D003EE7B0 /* DPHookDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		732170F3204F8E2D003EE7B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732170FE204F8E2D003EE7B0 /* put ipa or app here in Resources */,
+				732170FB204F8E2D003EE7B0 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		732170F2204F8E2D003EE7B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		732170F5204F8E2D003EE7B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		73217100204F8E2D003EE7B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		732170F0204F8E2D003EE7B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73217101204F8E2D003EE7B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73217139204F992C003EE7B0 /* SWLTools.m in Sources */,
+				7321711E204F8E2D003EE7B0 /* AntiAntiDebug.m in Sources */,
+				7321712A204F8E2D003EE7B0 /* DPHookDylib.m in Sources */,
+				73217119204F8E2D003EE7B0 /* MethodTrace.m in Sources */,
+				73217121204F8E2D003EE7B0 /* fishhook.c in Sources */,
+				73217126204F8E2D003EE7B0 /* DPHookDylib.mm in Sources */,
+				73217115204F8E2D003EE7B0 /* ANYMethodLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73217108204F8E2D003EE7B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73217104204F8E2D003EE7B0 /* DPHookDylib */;
+			targetProxy = 73217107204F8E2D003EE7B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7321712B204F8E2D003EE7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7321712C204F8E2D003EE7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7321712E204F8E2D003EE7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WXJENZKT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DPHookDylib/DPHookDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libDPHookDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"DPHookDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+					"-framework",
+					Cycript,
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		7321712F204F8E2D003EE7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = K8WXJENZKT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DPHookDylib/DPHookDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libDPHookDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"DPHookDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73217131204F8E2D003EE7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = K8WXJENZKT;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DPHook/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zun.tuya;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "961c3f05-2db2-4c47-8262-c9744cc1c97a";
+				PROVISIONING_PROFILE_SPECIFIER = "开发证书：通用*";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73217132204F8E2D003EE7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = K8WXJENZKT;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DPHook/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zun.tuya;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "961c3f05-2db2-4c47-8262-c9744cc1c97a";
+				PROVISIONING_PROFILE_SPECIFIER = "开发证书：通用*";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		732170EF204F8E2D003EE7B0 /* Build configuration list for PBXProject "DPHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7321712B204F8E2D003EE7B0 /* Debug */,
+				7321712C204F8E2D003EE7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7321712D204F8E2D003EE7B0 /* Build configuration list for PBXNativeTarget "DPHookDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7321712E204F8E2D003EE7B0 /* Debug */,
+				7321712F204F8E2D003EE7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73217130204F8E2D003EE7B0 /* Build configuration list for PBXNativeTarget "DPHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73217131204F8E2D003EE7B0 /* Debug */,
+				73217132204F8E2D003EE7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 732170EC204F8E2D003EE7B0 /* Project object */;
+}
